@@ -1,0 +1,2459 @@
+1
+00:00:04,059 --> 00:00:06,650
+olá pessoal do bem bom
+
+2
+00:00:06,650 --> 00:00:08,660
+é uma dúvida que eu tenho recebido muito
+
+3
+00:00:08,660 --> 00:00:10,880
+por e mail comentários no site do canal
+
+4
+00:00:10,880 --> 00:00:11,809
+e tudo mais
+
+5
+00:00:11,809 --> 00:00:14,719
+é com relação à validação de dados é
+
+6
+00:00:14,719 --> 00:00:16,610
+parece que o pessoal tá começando a ter
+
+7
+00:00:16,610 --> 00:00:18,140
+problemas com o usuário vamos dizer
+
+8
+00:00:18,140 --> 00:00:18,950
+assim né
+
+9
+00:00:18,950 --> 00:00:20,689
+sempre que desenvolve uma aplicação a
+
+10
+00:00:20,689 --> 00:00:22,310
+gente acha que ela completar você
+
+11
+00:00:22,310 --> 00:00:23,989
+submete a aplicação o usuário e ele
+
+12
+00:00:23,989 --> 00:00:26,270
+começa a achar erros na sua aplicação
+
+13
+00:00:26,270 --> 00:00:29,689
+esses erros por exemplo você coloca lá é
+
+14
+00:00:29,689 --> 00:00:32,000
+um campo data de nascimento a pessoa vai
+
+15
+00:00:32,000 --> 00:00:34,579
+colocar uma data futura coloca anos
+
+16
+00:00:34,579 --> 00:00:38,539
+taylor de 2022 1.200 o que for
+
+17
+00:00:38,539 --> 00:00:40,219
+então não faz sentido a data de
+
+18
+00:00:40,219 --> 00:00:42,079
+nascimento para a data futura
+
+19
+00:00:42,079 --> 00:00:43,789
+ok você tem que colocar sempre uma data
+
+20
+00:00:43,789 --> 00:00:47,120
+ou a data presente é inferior essa da ok
+
+21
+00:00:47,120 --> 00:00:49,460
+nós temos que fazer a validação dos
+
+22
+00:00:49,460 --> 00:00:52,850
+dados e não sei se vocês sabem mas cpf e
+
+23
+00:00:52,850 --> 00:00:54,140
+cnpj
+
+24
+00:00:54,140 --> 00:00:55,789
+são dois campos onde esses dois dados
+
+25
+00:00:55,789 --> 00:00:57,679
+dois tipos de dados bem complexos de
+
+26
+00:00:57,679 --> 00:00:59,690
+trabalhar por causa exatamente da
+
+27
+00:00:59,690 --> 00:01:02,510
+validação a gente precisa saber o cpf ou
+
+28
+00:01:02,510 --> 00:01:06,500
+cnpj são válidos o que seria isso dizem
+
+29
+00:01:06,500 --> 00:01:09,229
+dois sites um chamado gerador de cpf
+
+30
+00:01:09,229 --> 00:01:12,829
+ponto org eo gerador de cnpj ponto org
+
+31
+00:01:12,829 --> 00:01:15,490
+esses sites que são capazes de gerar e
+
+32
+00:01:15,490 --> 00:01:17,479
+documentos válidos
+
+33
+00:01:17,479 --> 00:01:19,490
+o gerador de pf tem como objetivo a
+
+34
+00:01:19,490 --> 00:01:21,170
+geração cbf para fins de teste de
+
+35
+00:01:21,170 --> 00:01:22,130
+software
+
+36
+00:01:22,130 --> 00:01:24,860
+porque isso é se eu quiser fazer uma
+
+37
+00:01:24,860 --> 00:01:26,540
+compra na internet por exemplo poderia
+
+38
+00:01:26,540 --> 00:01:29,750
+usar o cpf dele aqui ok mas não tem não
+
+39
+00:01:29,750 --> 00:01:32,360
+tem que fazer isso aqui porque o site
+
+40
+00:01:32,360 --> 00:01:34,549
+hoje em dia nem as operadoras de cartão
+
+41
+00:01:34,549 --> 00:01:35,840
+muito mais
+
+42
+00:01:35,840 --> 00:01:38,149
+eles trabalham com principalmente a
+
+43
+00:01:38,149 --> 00:01:41,119
+partir de junho de 2016 boleto vai ser
+
+44
+00:01:41,119 --> 00:01:42,979
+sempre com registro então não basta você
+
+45
+00:01:42,979 --> 00:01:45,619
+usar qualquer cpf qualquer cnpj tem que
+
+46
+00:01:45,619 --> 00:01:47,000
+ser o seu cpf
+
+47
+00:01:47,000 --> 00:01:49,070
+ok e para cartão de crédito
+
+48
+00:01:49,070 --> 00:01:50,780
+principalmente então não adianta nada
+
+49
+00:01:50,780 --> 00:01:52,130
+você querer só isso aqui pra fazer uma
+
+50
+00:01:52,130 --> 00:01:53,990
+compra com o cpf de outra pessoa e não
+
+51
+00:01:53,990 --> 00:01:55,789
+pagar aquela compra quem não faz sentido
+
+52
+00:01:55,789 --> 00:01:58,969
+isso é beleza isso aqui não é só para
+
+53
+00:01:58,969 --> 00:02:00,500
+fins de teste de software que seria o
+
+54
+00:02:00,500 --> 00:02:04,579
+cpf pessoal do traço do hífen para trás
+
+55
+00:02:04,579 --> 00:02:07,939
+para a esquerda onde assim é o cpf
+
+56
+00:02:07,939 --> 00:02:09,320
+propriamente dito
+
+57
+00:02:09,320 --> 00:02:13,400
+são os números que te dente ficam ok do
+
+58
+00:02:13,400 --> 00:02:15,080
+hífen à direita
+
+59
+00:02:15,080 --> 00:02:17,270
+são dois dígitos que são os dígitos
+
+60
+00:02:17,270 --> 00:02:20,600
+verificadores com base nesses discos nós
+
+61
+00:02:20,600 --> 00:02:22,730
+conseguimos saber se os nove primeiros
+
+62
+00:02:22,730 --> 00:02:26,210
+discos são válidos por exemplo havendo
+
+63
+00:02:26,210 --> 00:02:29,630
+um aqui a esquerdo do iff na esquerda o
+
+64
+00:02:29,630 --> 00:02:33,170
+traço esse 11 indica a sua unidade
+
+65
+00:02:33,170 --> 00:02:37,280
+federativa ou seja onde você é foi
+
+66
+00:02:37,280 --> 00:02:40,010
+registrado no seu cpf foi registrado no
+
+67
+00:02:40,010 --> 00:02:42,800
+caso de um ataque seria para o distrito
+
+68
+00:02:42,800 --> 00:02:45,080
+federal goiás mato grosso do sul o
+
+69
+00:02:45,080 --> 00:02:47,330
+tocantins ok então você nasce você
+
+70
+00:02:47,330 --> 00:02:50,030
+receber foi registrado em uma dessas
+
+71
+00:02:50,030 --> 00:02:51,830
+unidades federativas
+
+72
+00:02:51,830 --> 00:02:54,290
+o botão gerar cpfp quando a casa de seu
+
+73
+00:02:54,290 --> 00:02:57,290
+cliente ter um cpf novo por exemplo 66
+
+74
+00:02:57,290 --> 00:03:00,350
+aqui seria pra minas gerais e por aí vai
+
+75
+00:03:00,350 --> 00:03:04,160
+ok e o seguinte esse 34 que foi gerado
+
+76
+00:03:04,160 --> 00:03:07,280
+um ok ele é gerado com base em cálculos
+
+77
+00:03:07,280 --> 00:03:10,010
+matemáticos com base nos primeiros nove
+
+78
+00:03:10,010 --> 00:03:12,590
+dígitos que cálculos são isso vou
+
+79
+00:03:12,590 --> 00:03:13,700
+procurar na internet tem muita
+
+80
+00:03:13,700 --> 00:03:15,230
+explicação desses cálculos não estou
+
+81
+00:03:15,230 --> 00:03:17,150
+aqui para ficar falando disso se quiser
+
+82
+00:03:17,150 --> 00:03:18,770
+multiplica por dois por três por quatro
+
+83
+00:03:18,770 --> 00:03:21,290
+por 5 por 6 depois de volta por 4 por
+
+84
+00:03:21,290 --> 00:03:23,030
+cinco e aí vai entender que vai fazer
+
+85
+00:03:23,030 --> 00:03:25,700
+esses cálculos é multiplicar as faz a
+
+86
+00:03:25,700 --> 00:03:28,190
+soma reino com base em resto com base no
+
+87
+00:03:28,190 --> 00:03:30,560
+consciente do mais a gente tenha esses
+
+88
+00:03:30,560 --> 00:03:32,930
+dois dígitos aqui ok
+
+89
+00:03:32,930 --> 00:03:36,019
+o mesmo vale para o cnpj os dois dígitos
+
+90
+00:03:36,019 --> 00:03:38,570
+finais que são vistos verificadores são
+
+91
+00:03:38,570 --> 00:03:41,540
+calculados com base na parte à esquerda
+
+92
+00:03:41,540 --> 00:03:42,350
+do hífen
+
+93
+00:03:42,350 --> 00:03:45,830
+ok não tô aqui pra explicar como que são
+
+94
+00:03:45,830 --> 00:03:48,080
+fez esses cálculos não nada disso porque
+
+95
+00:03:48,080 --> 00:03:50,840
+eu já tenho tudo isso pronto eu já tenho
+
+96
+00:03:50,840 --> 00:03:53,989
+duas classes cnpj é aquela cpf prontas
+
+97
+00:03:53,989 --> 00:03:56,330
+para fazer avaliação deles se você
+
+98
+00:03:56,330 --> 00:03:58,100
+quiser analisar se pode usar o olhar o
+
+99
+00:03:58,100 --> 00:04:02,780
+método e cpf ou método isso sem npj ok
+
+100
+00:04:02,780 --> 00:04:06,200
+ele vai encontrar é a melhor validação
+
+101
+00:04:06,200 --> 00:04:08,630
+pra você que vai te falar se o cpf ou
+
+102
+00:04:08,630 --> 00:04:11,780
+cnpj é válido ou não como que a gente
+
+103
+00:04:11,780 --> 00:04:14,180
+usa isso que é importante você não vai
+
+104
+00:04:14,180 --> 00:04:15,590
+precisar mexer nas clássicas
+
+105
+00:04:15,590 --> 00:04:17,570
+se você precisa adaptar assim mas o
+
+106
+00:04:17,570 --> 00:04:18,798
+primeiro momento não vai precisar mexer
+
+107
+00:04:18,798 --> 00:04:19,760
+nessas classes
+
+108
+00:04:19,760 --> 00:04:22,100
+vamos lá pro propor a aplicação
+
+109
+00:04:22,100 --> 00:04:25,370
+propriamente de eu tenho campo cpf campo
+
+110
+00:04:25,370 --> 00:04:28,400
+cnpj já com as máscaras aqui são quem
+
+111
+00:04:28,400 --> 00:04:29,150
+formato
+
+112
+00:04:29,150 --> 00:04:33,130
+o cheque é text filme para o cpf/cnpj
+
+113
+00:04:33,130 --> 00:04:35,960
+data ea hora o que eu queria dois campos
+
+114
+00:04:35,960 --> 00:04:38,210
+que foi até agora a direita que eu tenho
+
+115
+00:04:38,210 --> 00:04:40,580
+os resultados da avaliação quando ele
+
+116
+00:04:40,580 --> 00:04:41,720
+caiu em qualidade têm que preencher
+
+117
+00:04:41,720 --> 00:04:44,180
+esses campos aqui esses campos nesses é
+
+118
+00:04:44,180 --> 00:04:48,110
+de lei bolsa aqui e abaixo aqui eu tenho
+
+119
+00:04:48,110 --> 00:04:50,270
+pra um cadastro mais complexo vamos
+
+120
+00:04:50,270 --> 00:04:53,240
+dizer assim que você seleciona qual é o
+
+121
+00:04:53,240 --> 00:04:55,220
+tipo de documentos e pessoa física ou
+
+122
+00:04:55,220 --> 00:04:57,860
+jurídica por exemplo cpf se for cpf e
+
+123
+00:04:57,860 --> 00:05:00,050
+clicando aqui na opção cpf
+
+124
+00:05:00,050 --> 00:05:01,880
+ele vai carregar a máscara do cpf em
+
+125
+00:05:01,880 --> 00:05:03,380
+baixo pra mim só pra vocês verem a
+
+126
+00:05:03,380 --> 00:05:07,670
+máscara como seria lá totalmente
+
+127
+00:05:07,670 --> 00:05:10,010
+diferente eu tenho há barracas nem pj
+
+128
+00:05:10,010 --> 00:05:11,960
+então quando aplicar no cnpj tem que
+
+129
+00:05:11,960 --> 00:05:14,960
+carregar a máscara nos no cnpj então em
+
+130
+00:05:14,960 --> 00:05:17,270
+um campo eu tenho que ter duas possíveis
+
+131
+00:05:17,270 --> 00:05:19,010
+máscaras eu quero mostrar para vocês
+
+132
+00:05:19,010 --> 00:05:19,730
+também
+
+133
+00:05:19,730 --> 00:05:21,800
+vamos lá repubblica invalidar aqui eu já
+
+134
+00:05:21,800 --> 00:05:25,100
+tenho há as trincas nas variáveis do
+
+135
+00:05:25,100 --> 00:05:27,380
+tipo sim capturando os textos de cada
+
+136
+00:05:27,380 --> 00:05:30,950
+campi beleza eu vou fazer eu vou criar
+
+137
+00:05:30,950 --> 00:05:33,140
+um objeto do tipo cpf
+
+138
+00:05:33,140 --> 00:05:38,930
+o chamar ele de ipf minúsculo é melhor
+
+139
+00:05:38,930 --> 00:05:43,460
+pf recebe mil recebe mil que new cpf
+
+140
+00:05:43,460 --> 00:05:45,590
+e quando eu criei um cpf eu tenho que
+
+141
+00:05:45,590 --> 00:05:47,810
+passar duas dois valores para ele a
+
+142
+00:05:47,810 --> 00:05:50,660
+primeira mesmo tem que passar o cpf
+
+143
+00:05:50,660 --> 00:05:52,100
+eu tenho que falar se o cpf está
+
+144
+00:05:52,100 --> 00:05:55,640
+formatado ou não eu vou passar então cpf
+
+145
+00:05:55,640 --> 00:05:59,570
+cru porque o meu cpf estar com a máscara
+
+146
+00:05:59,570 --> 00:06:01,850
+e tem um formato caso não tivesse uma
+
+147
+00:06:01,850 --> 00:06:04,430
+máscara caso eu tivesse correndo aqui do
+
+148
+00:06:04,430 --> 00:06:06,950
+usuário e ele sem pontos e traços aí eu
+
+149
+00:06:06,950 --> 00:06:10,430
+passaria que fauci seria dessa forma mas
+
+150
+00:06:10,430 --> 00:06:14,110
+o meu cpf está formatado então é true
+
+151
+00:06:14,110 --> 00:06:21,860
+width pf ponto e cpf se isso não for
+
+152
+00:06:21,860 --> 00:06:24,530
+válido ou seja pf
+
+153
+00:06:24,530 --> 00:06:28,610
+eu vou fazer alguma coisa elsie o que eu
+
+154
+00:06:28,610 --> 00:06:32,680
+fazia que é mostrar um gay option tem
+
+155
+00:06:33,960 --> 00:06:36,960
+ponto
+
+156
+00:06:37,140 --> 00:06:41,140
+show nessa de da alog
+
+157
+00:06:41,140 --> 00:06:46,890
+eu vou passar a mensagem cpf inválido
+
+158
+00:06:46,890 --> 00:06:50,470
+beleza tá mas isso meu cpf for válido o
+
+159
+00:06:50,470 --> 00:06:52,600
+que eu faço então eu vou fazer aqui um
+
+160
+00:06:52,600 --> 00:06:55,090
+som é da ms né
+
+161
+00:06:55,090 --> 00:07:00,990
+eu coloquei como se ele chama cpf
+
+162
+00:07:00,990 --> 00:07:03,550
+underline masc
+
+163
+00:07:03,550 --> 00:07:10,420
+então eu fazia o seguinte ponto 7 o que
+
+164
+00:07:10,420 --> 00:07:12,760
+acontece no campo cpf mas que é o
+
+165
+00:07:12,760 --> 00:07:15,400
+primeiro aqui eu vou colocar o cpf com
+
+166
+00:07:15,400 --> 00:07:17,590
+máscara então do jeito que eu lhe então
+
+167
+00:07:17,590 --> 00:07:22,480
+vou fazer aqui um cpf pf é ponto cpf e
+
+168
+00:07:22,480 --> 00:07:24,190
+eu vou passar se eu quero com máscara ou
+
+169
+00:07:24,190 --> 00:07:25,600
+não eu quero com mas quando eu passar
+
+170
+00:07:25,600 --> 00:07:31,150
+tudo e o cpf underline no méxico eu vou
+
+171
+00:07:31,150 --> 00:07:36,610
+fazer ponto 7 text pf ponto ghetti cpf e
+
+172
+00:07:36,610 --> 00:07:38,740
+vou passar aqui falso porque eu não
+
+173
+00:07:38,740 --> 00:07:41,380
+quero máscara no meu cpf
+
+174
+00:07:41,380 --> 00:07:43,270
+vamos validar vão testar isso aqui então
+
+175
+00:07:43,270 --> 00:07:48,340
+né o da aplicação ou digitar o cpf aqui
+
+176
+00:07:48,340 --> 00:07:55,270
+hoje 10 em validar cpf inválido porque a
+
+177
+00:07:55,270 --> 00:07:56,890
+idéia cpf inválido só pra vocês
+
+178
+00:07:56,890 --> 00:08:00,100
+observarem uma coisa que no método e cpf
+
+179
+00:08:00,100 --> 00:08:01,750
+eu tenho alguns testes aqui para ver se
+
+180
+00:08:01,750 --> 00:08:03,520
+o cpf é válido de cara eu sei se for
+
+181
+00:08:03,520 --> 00:08:08,770
+tudo zero se for tudo 123456789 ou se o
+
+182
+00:08:08,770 --> 00:08:11,170
+tamanho do cpfor menor do que 11 foi
+
+183
+00:08:11,170 --> 00:08:14,560
+diferente de 11 é maior ou menor qi seu
+
+184
+00:08:14,560 --> 00:08:16,330
+retorno falso de carne não coloque tudo
+
+185
+00:08:16,330 --> 00:08:19,330
+0 ali é falso porque o cpf inválido não
+
+186
+00:08:19,330 --> 00:08:22,630
+posso ter um cpf dessa forma aqui ok
+
+187
+00:08:22,630 --> 00:08:24,940
+gilberto mas me fala se eu estou
+
+188
+00:08:24,940 --> 00:08:26,740
+digitando lá com máscara porque está
+
+189
+00:08:26,740 --> 00:08:29,140
+comprando sem máscara porque dentro do
+
+190
+00:08:29,140 --> 00:08:31,270
+construtor da classe cpf
+
+191
+00:08:31,270 --> 00:08:33,520
+eu faço aqui quando eu recebo cpf e não
+
+192
+00:08:33,520 --> 00:08:36,220
+recebam sei que eu mando formatar eu
+
+193
+00:08:36,220 --> 00:08:38,140
+tenho um método format queimando
+
+194
+00:08:38,140 --> 00:08:40,090
+formatar ele com a minha máscara que eu
+
+195
+00:08:40,090 --> 00:08:42,549
+faço nesse formato aqui eu simplesmente
+
+196
+00:08:42,549 --> 00:08:46,960
+ele minuto tudo de ponto e tudo
+
+197
+00:08:46,960 --> 00:08:49,250
+quando eu chamo médio de informática que
+
+198
+00:08:49,250 --> 00:08:52,580
+eu tô falando o que eu quero pra aí ok
+
+199
+00:08:52,580 --> 00:08:54,560
+na verdade eu fiz uma adaptação aqui
+
+200
+00:08:54,560 --> 00:08:56,540
+esse código ele não é o meu código
+
+201
+00:08:56,540 --> 00:08:57,980
+original de fazer algumas adaptações
+
+202
+00:08:57,980 --> 00:09:00,140
+para um outro ou outra aplicação está
+
+203
+00:09:00,140 --> 00:09:02,300
+desenvolvendo na verdade esse atributo
+
+204
+00:09:02,300 --> 00:09:05,270
+máscara que ele até desnecessário é eu
+
+205
+00:09:05,270 --> 00:09:09,650
+posso até remover e daqui porque é pra
+
+206
+00:09:09,650 --> 00:09:11,180
+nossa aplicação aqui não faz nenhum
+
+207
+00:09:11,180 --> 00:09:14,300
+sentido e posso passar que sempre false
+
+208
+00:09:14,300 --> 00:09:16,610
+porque o meu cpf é sempre armazenados em
+
+209
+00:09:16,610 --> 00:09:18,230
+pontes em traço
+
+210
+00:09:18,230 --> 00:09:20,840
+então quando eu recebo cpf aqui eu já
+
+211
+00:09:20,840 --> 00:09:23,270
+tenho que mandar é formatar ele para
+
+212
+00:09:23,270 --> 00:09:26,240
+remover pontos e traço a função format o
+
+213
+00:09:26,240 --> 00:09:28,430
+método format o que ele faz aqui é o
+
+214
+00:09:28,430 --> 00:09:30,770
+seguinte eu passar a máscara como krul e
+
+215
+00:09:30,770 --> 00:09:32,630
+vai formatar com pontos e traços de que
+
+216
+00:09:32,630 --> 00:09:33,890
+não é nada nenhum bicho de sete cabeças
+
+217
+00:09:33,890 --> 00:09:34,730
+não
+
+218
+00:09:34,730 --> 00:09:38,090
+ele pega o as posições e pv vai formatar
+
+219
+00:09:38,090 --> 00:09:41,480
+e caso eu passei a máscara false ele vai
+
+220
+00:09:41,480 --> 00:09:43,790
+remover a fazer um replay saque de ponto
+
+221
+00:09:43,790 --> 00:09:47,090
+por nada e traço por nada ok e vai
+
+222
+00:09:47,090 --> 00:09:49,400
+retornar ele então o momento do formato
+
+223
+00:09:49,400 --> 00:09:51,470
+vai fazer isso aqui e posso fazer a
+
+224
+00:09:51,470 --> 00:09:53,180
+mesma coisa para o cnpj também esse
+
+225
+00:09:53,180 --> 00:09:55,490
+código ele tava otimizado nem pra uma
+
+226
+00:09:55,490 --> 00:09:59,090
+outra aplicação que pode remover que a
+
+227
+00:09:59,090 --> 00:10:06,140
+máscara remover que também e corrigi lá
+
+228
+00:10:06,140 --> 00:10:07,850
+na minha aplicação principal agora eu
+
+229
+00:10:07,850 --> 00:10:10,040
+não preciso mais passar qualquer máscara
+
+230
+00:10:10,040 --> 00:10:13,940
+dele pronto tudo certo até melhorou o
+
+231
+00:10:13,940 --> 00:10:15,860
+rendimento com mais legível
+
+232
+00:10:15,860 --> 00:10:22,910
+então vamos lá é o cpf do zero uma nova
+
+233
+00:10:22,910 --> 00:10:26,330
+ltda cpf inválido digitar o cpf vai
+
+234
+00:10:26,330 --> 00:10:28,520
+vamos pegar então cpf vale pegar aqui
+
+235
+00:10:28,520 --> 00:10:29,150
+mesmo
+
+236
+00:10:29,150 --> 00:10:35,510
+vamos lá 7 395 7 4 616 34
+
+237
+00:10:35,510 --> 00:10:40,490
+vou lhe dá a ele carregou 739 5 7 4 6 1
+
+238
+00:10:40,490 --> 00:10:42,230
+6 3
+
+239
+00:10:42,230 --> 00:10:44,600
+eu tô pegando a posição errada lá na
+
+240
+00:10:44,600 --> 00:10:46,610
+massa então só pra vocês verem sem
+
+241
+00:10:46,610 --> 00:10:50,860
+máscara ele está certinho 739 5 7 4 6 1
+
+242
+00:10:50,860 --> 00:10:54,040
+634 problema está só na máscara lhe
+
+243
+00:10:54,040 --> 00:10:57,330
+vamos ver o que é
+
+244
+00:10:57,330 --> 00:10:59,800
+beleza corrigido então a questão era só
+
+245
+00:10:59,800 --> 00:11:01,720
+não format que eu fiz uma cópia do cnpj
+
+246
+00:11:01,720 --> 00:11:04,480
+então ele ficou com a máscara o gerente
+
+247
+00:11:04,480 --> 00:11:10,470
+é mas agora é só pra vocês verem então 7
+
+248
+00:11:10,470 --> 00:11:14,560
+395 7 4 616 34
+
+249
+00:11:14,560 --> 00:11:17,650
+mandava ali dá ela com mas que ele fica
+
+250
+00:11:17,650 --> 00:11:19,330
+dessa forma e sem massa ele fica dessa
+
+251
+00:11:19,330 --> 00:11:21,490
+forma vamos prosseguir agora então para
+
+252
+00:11:21,490 --> 00:11:24,190
+o cnpj e depois para a data
+
+253
+00:11:24,190 --> 00:11:27,760
+então no cnpj que nós temos que fazer
+
+254
+00:11:27,760 --> 00:11:41,160
+fechei ele é no vamos fazer aqui cnpj
+
+255
+00:11:41,400 --> 00:11:48,400
+chamar dpj recebe new cnpj passando o
+
+256
+00:11:48,400 --> 00:12:13,120
+cnpj claro cnpj mesmo tj se o cnpj em
+
+257
+00:12:13,120 --> 00:12:17,820
+mãos foram cnpj nós vamos fazer é cn tj
+
+258
+00:12:17,820 --> 00:12:23,980
+underline inesc ponto 7 text pj ponto e
+
+259
+00:12:23,980 --> 00:12:29,820
+cnpj passando tudo a mesma coisa aqui
+
+260
+00:12:29,820 --> 00:12:31,720
+passando fauci
+
+261
+00:12:31,720 --> 00:12:38,860
+nuno mesquita e um elsie caso tenha
+
+262
+00:12:38,860 --> 00:12:47,820
+algum erro já faço aqui cnpj cnpj em vai
+
+263
+00:12:47,820 --> 00:12:51,270
+executar aqui para ver
+
+264
+00:12:51,800 --> 00:12:53,670
+lembrando então que agora o seguinte
+
+265
+00:12:53,670 --> 00:12:56,160
+pessoal a gente está validando o cpf e
+
+266
+00:12:56,160 --> 00:12:57,690
+cnpj
+
+267
+00:12:57,690 --> 00:13:00,270
+ok então só os dois eu tenho agora
+
+268
+00:13:00,270 --> 00:13:03,990
+preencher tanto o cpf quanto o cnpj ou
+
+269
+00:13:03,990 --> 00:13:10,920
+cpf 7 395 7 4 616 34 e o cnpj
+
+270
+00:13:10,920 --> 00:13:13,920
+temos um cnpj vale daqui já comanda a
+
+271
+00:13:13,920 --> 00:13:22,730
+geral não só pra cnpj 147 7 728 9000 164
+
+272
+00:13:22,730 --> 00:13:25,800
+validar validou tudo perfeitamente ela
+
+273
+00:13:25,800 --> 00:13:28,440
+também pegou cnpj com máscara sem
+
+274
+00:13:28,440 --> 00:13:31,500
+máscara eo cpf também vai dos dois
+
+275
+00:13:31,500 --> 00:13:33,960
+agora vamos supor que o cnpj que não é
+
+276
+00:13:33,960 --> 00:13:37,410
+64 e 65 então já tornou o cnpj inválido
+
+277
+00:13:37,410 --> 00:13:40,440
+vou mandar validá-la o cnpj em vários
+
+278
+00:13:40,440 --> 00:13:42,390
+se eu tocar aqui também quatro vou
+
+279
+00:13:42,390 --> 00:13:44,490
+colocar cinco anos e pf também vai lidar
+
+280
+00:13:44,490 --> 00:13:47,279
+ainda o cpf invadir logo em seguida cnpj
+
+281
+00:13:47,279 --> 00:13:51,240
+em vário os dois são inválidos e que é 4
+
+282
+00:13:51,240 --> 00:13:54,060
+e no outro ela também é quatro
+
+283
+00:13:54,060 --> 00:13:56,190
+mandei validar ele não deu mensagem
+
+284
+00:13:56,190 --> 00:13:59,610
+nunca porque está tudo certo ok muito
+
+285
+00:13:59,610 --> 00:14:01,680
+simples não tem mistério nenhum para
+
+286
+00:14:01,680 --> 00:14:04,500
+usar essas duas classes claros e deve
+
+287
+00:14:04,500 --> 00:14:05,880
+ter que fazer alguma adaptação e para o
+
+288
+00:14:05,880 --> 00:14:08,100
+seu código está ok mas vamos então para
+
+289
+00:14:08,100 --> 00:14:08,910
+a data
+
+290
+00:14:08,910 --> 00:14:10,770
+trabalhar com datas pessoal é um pouco
+
+291
+00:14:10,770 --> 00:14:13,740
+mais complexo do que você imagina
+
+292
+00:14:13,740 --> 00:14:15,630
+em geral médicos vão fazer cálculos com
+
+293
+00:14:15,630 --> 00:14:17,250
+datas por exemplo para saber se uma
+
+294
+00:14:17,250 --> 00:14:20,670
+pessoa menor de idade para saber que é a
+
+295
+00:14:20,670 --> 00:14:23,070
+diferença entre duas datas para
+
+296
+00:14:23,070 --> 00:14:25,410
+adicionar dias ou adicionar meses ou
+
+297
+00:14:25,410 --> 00:14:29,070
+anos a uma data que então somar duas
+
+298
+00:14:29,070 --> 00:14:31,410
+datas né então a gente fazer certos
+
+299
+00:14:31,410 --> 00:14:33,360
+cálculos entre a classe data é uma
+
+300
+00:14:33,360 --> 00:14:35,640
+classe um pouco mais complexa
+
+301
+00:14:35,640 --> 00:14:38,339
+ok eu tenho muito mais metros na classe
+
+302
+00:14:38,339 --> 00:14:40,160
+data do que nas outras
+
+303
+00:14:40,160 --> 00:14:42,870
+vamos lá então primeira coisa que vocês
+
+304
+00:14:42,870 --> 00:14:43,980
+vão saber
+
+305
+00:14:43,980 --> 00:14:47,100
+existem vários tipos de idade de dados
+
+306
+00:14:47,100 --> 00:14:49,770
+para armazenar data tem time tem
+
+307
+00:14:49,770 --> 00:14:53,190
+timestamp você tem é deite se tem o
+
+308
+00:14:53,190 --> 00:14:56,730
+calendário famoso calendário do java ok
+
+309
+00:14:56,730 --> 00:14:59,339
+só que é banco de dados costuma
+
+310
+00:14:59,339 --> 00:15:01,890
+trabalhar com timestamp agente armazena
+
+311
+00:15:01,890 --> 00:15:02,970
+data em times têm
+
+312
+00:15:02,970 --> 00:15:06,060
+então eu prefiro trabalhar com times
+
+313
+00:15:06,060 --> 00:15:09,810
+tempo em java ok então como que a gente
+
+314
+00:15:09,810 --> 00:15:12,029
+faz para trabalhar com uma data uma data
+
+315
+00:15:12,029 --> 00:15:13,470
+em times tempo e ela tem o seguinte
+
+316
+00:15:13,470 --> 00:15:16,259
+formato colocar até como comentário pra
+
+317
+00:15:16,259 --> 00:15:20,100
+vocês ano então são quatro dígitos para
+
+318
+00:15:20,100 --> 00:15:26,399
+o ano traço mmd mês e traço de de dia
+
+319
+00:15:26,399 --> 00:15:29,819
+ano aqui e toque espaço
+
+320
+00:15:29,819 --> 00:15:32,670
+ora ora dois dígitos para a hora dois
+
+321
+00:15:32,670 --> 00:15:37,889
+pontos dois dígitos por um minuto e ss
+
+322
+00:15:37,889 --> 00:15:40,170
+dois dígitos para o segundo time sempre
+
+323
+00:15:40,170 --> 00:15:42,029
+tem esse formato
+
+324
+00:15:42,029 --> 00:15:44,550
+porém quando ele é armazenado no banco
+
+325
+00:15:44,550 --> 00:15:46,800
+de dados e não é armazenado dessa forma
+
+326
+00:15:46,800 --> 00:15:49,259
+internamente ele é armazenado como um
+
+327
+00:15:49,259 --> 00:15:53,639
+número inteiro coque e face cálculos em
+
+328
+00:15:53,639 --> 00:15:54,779
+cima desse número inteiro para chegar
+
+329
+00:15:54,779 --> 00:15:57,029
+nesse formato que vocês estão vendo aí
+
+330
+00:15:57,029 --> 00:15:59,399
+por isto que é melhor você trabalhar com
+
+331
+00:15:59,399 --> 00:16:01,589
+times tempo na sua base de dados porque
+
+332
+00:16:01,589 --> 00:16:04,050
+ela é otimizada ela não é vista como uma
+
+333
+00:16:04,050 --> 00:16:06,509
+string pelo banco de dados para você de
+
+334
+00:16:06,509 --> 00:16:07,649
+mós transformado
+
+335
+00:16:07,649 --> 00:16:09,269
+mas internamente o banco dá trabalho
+
+336
+00:16:09,269 --> 00:16:12,180
+como um número inteiro ok então ele
+
+337
+00:16:12,180 --> 00:16:13,980
+trabalha de uma forma melhor forma mais
+
+338
+00:16:13,980 --> 00:16:15,230
+otimizada
+
+339
+00:16:15,230 --> 00:16:17,850
+então vamos lá eu tenho a data e eu
+
+340
+00:16:17,850 --> 00:16:20,819
+tenho a hora porque como eu faço então
+
+341
+00:16:20,819 --> 00:16:23,970
+pra criar uma variável data um objeto
+
+342
+00:16:23,970 --> 00:16:24,540
+data
+
+343
+00:16:24,540 --> 00:16:30,149
+vamos à data chamado de recebe new data
+
+344
+00:16:30,149 --> 00:16:32,730
+não passa nada no construtor aqui o que
+
+345
+00:16:32,730 --> 00:16:35,550
+ele vai fazer é pegar a data atual
+
+346
+00:16:35,550 --> 00:16:38,129
+então eu vou fazer de cara ele já dá
+
+347
+00:16:38,129 --> 00:16:43,680
+underline barras ponto 7 text vou chamar
+
+348
+00:16:43,680 --> 00:16:47,550
+de de ponto e é o seguinte fazendo aqui
+
+349
+00:16:47,550 --> 00:16:49,620
+é eu criei um objeto que vai ter a data
+
+350
+00:16:49,620 --> 00:16:53,610
+ea hora atual beleza e eu você tá nos
+
+351
+00:16:53,610 --> 00:16:57,120
+campos data que com barras ou com traços
+
+352
+00:16:57,120 --> 00:16:59,519
+é é a data atual
+
+353
+00:16:59,519 --> 00:17:02,790
+de acordo com o formato com barras vai
+
+354
+00:17:02,790 --> 00:17:06,720
+ser dia barra mês barra ano espaço ora
+
+355
+00:17:06,720 --> 00:17:09,740
+batra dois pontos minutos dois pontos 2º
+
+356
+00:17:09,740 --> 00:17:12,659
+e no caso de traços vai ser um formato
+
+357
+00:17:12,659 --> 00:17:14,699
+que eu falei pra vocês anos ele traços
+
+358
+00:17:14,699 --> 00:17:15,950
+eu tenho um ano
+
+359
+00:17:15,950 --> 00:17:18,770
+o traço mês traço dia e já com barro eu
+
+360
+00:17:18,770 --> 00:17:21,740
+tenho dia barra - barranco inverte que o
+
+361
+00:17:21,740 --> 00:17:26,720
+dia com ok então fazer ponto jet data
+
+362
+00:17:26,720 --> 00:17:29,570
+stream o que o candidato stream ele
+
+363
+00:17:29,570 --> 00:17:32,270
+retorna à data extingue a data com
+
+364
+00:17:32,270 --> 00:17:35,810
+barras e com a hora então eu tenho data
+
+365
+00:17:35,810 --> 00:17:39,560
+hora que também tem um data/hora stream
+
+366
+00:17:39,560 --> 00:17:42,260
+ok vamos rodar só pra vocês verem eu vou
+
+367
+00:17:42,260 --> 00:17:45,320
+é comentar o cpf cnpj
+
+368
+00:17:45,320 --> 00:17:46,760
+a gente não tem que acreditamos que toda
+
+369
+00:17:46,760 --> 00:17:51,920
+hora beleza vamos lá quando clicar em
+
+370
+00:17:51,920 --> 00:17:53,330
+validade vai carregar esse pra mim então
+
+371
+00:17:53,330 --> 00:17:55,880
+clique em validar a lei pegou
+
+372
+00:17:55,880 --> 00:17:58,520
+onze dos cinco de 2016 oito e quinze da
+
+373
+00:17:58,520 --> 00:18:00,170
+noite horário que eu gravando esse vídeo
+
+374
+00:18:00,170 --> 00:18:00,770
+aqui
+
+375
+00:18:00,770 --> 00:18:03,230
+ok a data do sistema a das do windows
+
+376
+00:18:03,230 --> 00:18:07,810
+aqui se eu colocar lá com traços data
+
+377
+00:18:07,810 --> 00:18:13,990
+underline traços ponto 7 text de ponto
+
+378
+00:18:13,990 --> 00:18:16,160
+seguinte entre os métodos que eu tenho
+
+379
+00:18:16,160 --> 00:18:19,520
+aqui eu tenho um método chamado jet
+
+380
+00:18:19,520 --> 00:18:22,070
+times temp que ele retorna um time
+
+381
+00:18:22,070 --> 00:18:24,740
+stempin rock e eu tenho agora ponto
+
+382
+00:18:24,740 --> 00:18:28,130
+terrestre que esse método faz
+
+383
+00:18:28,130 --> 00:18:32,570
+vamos executar olha só ele pegou com
+
+384
+00:18:32,570 --> 00:18:35,240
+barras e faz com 11 25 2016
+
+385
+00:18:35,240 --> 00:18:40,360
+morreu com traje de 2016 traços 0 5-11
+
+386
+00:18:40,360 --> 00:18:42,680
+que está fazendo aquele time retornando
+
+387
+00:18:42,680 --> 00:18:45,380
+o time stempin e é dessa forma que seria
+
+388
+00:18:45,380 --> 00:18:47,090
+armazenado na base de dados
+
+389
+00:18:47,090 --> 00:18:48,740
+então se você tiver trabalhando com dar
+
+390
+00:18:48,740 --> 00:18:50,840
+com datas para armazenar no banco de
+
+391
+00:18:50,840 --> 00:18:51,950
+dados
+
+392
+00:18:51,950 --> 00:18:54,020
+você pode considerar se usar o tipo
+
+393
+00:18:54,020 --> 00:18:57,200
+timestamp e aí a minha classe que data
+
+394
+00:18:57,200 --> 00:18:58,700
+ele retorna exatamente o que você
+
+395
+00:18:58,700 --> 00:19:00,590
+precisa na base de dados um time sempre
+
+396
+00:19:00,590 --> 00:19:01,340
+ok
+
+397
+00:19:01,340 --> 00:19:02,990
+a diferença é que eu fiz um tio stream
+
+398
+00:19:02,990 --> 00:19:04,940
+que é para imprimir na tela para exibir
+
+399
+00:19:04,940 --> 00:19:06,200
+ele na tela
+
+400
+00:19:06,200 --> 00:19:08,240
+tajra roberto beleza mas está pegando a
+
+401
+00:19:08,240 --> 00:19:09,710
+data atual em momento algum você
+
+402
+00:19:09,710 --> 00:19:11,990
+enxergar digitar a data ea hora como que
+
+403
+00:19:11,990 --> 00:19:14,360
+a gente faz então ao invés de fazer new
+
+404
+00:19:14,360 --> 00:19:15,830
+data aqui que eu tenho um outro
+
+405
+00:19:15,830 --> 00:19:18,710
+construtor que eu passo para ele um time
+
+406
+00:19:18,710 --> 00:19:20,930
+step data que é basicamente aqui é o
+
+407
+00:19:20,930 --> 00:19:22,640
+time tem que estar lá na base de dados
+
+408
+00:19:22,640 --> 00:19:24,650
+então eu quero recuperar meu espaço no
+
+409
+00:19:24,650 --> 00:19:26,960
+time sem play ou eu passo uma string
+
+410
+00:19:26,960 --> 00:19:29,460
+data e um formato que
+
+411
+00:19:29,460 --> 00:19:32,070
+seria isso a minha data é exatamente
+
+412
+00:19:32,070 --> 00:19:38,490
+data mais espaço mais hora mas eu não
+
+413
+00:19:38,490 --> 00:19:41,580
+coloquei segundo lá então 2.100 que eu
+
+414
+00:19:41,580 --> 00:19:43,710
+fiz aqui eu montei a minha data ea hora
+
+415
+00:19:43,710 --> 00:19:46,770
+no formato timestamp ok então a gente
+
+416
+00:19:46,770 --> 00:19:52,830
+tem data espaço ora 2.100 porque a hora
+
+417
+00:19:52,830 --> 00:19:56,100
+tentei hora minuto e segundo porque logo
+
+418
+00:19:56,100 --> 00:19:57,929
+em seguida tem que passar o formato qual
+
+419
+00:19:57,929 --> 00:20:01,799
+é o formato disso o formato é data ponto
+
+420
+00:20:01,799 --> 00:20:04,590
+eu tenho quatro formatos aqui barra com
+
+421
+00:20:04,590 --> 00:20:07,169
+hora barra senhora item com hora o hífen
+
+422
+00:20:07,169 --> 00:20:11,130
+sem hora eu tenho dito vai com barra nem
+
+423
+00:20:11,130 --> 00:20:13,230
+a minha máscara usa barras então vamos à
+
+424
+00:20:13,230 --> 00:20:16,320
+barra com hora porque eu tô passando da
+
+425
+00:20:16,320 --> 00:20:18,270
+hora que juntos e vamos ver o que
+
+426
+00:20:18,270 --> 00:20:20,480
+acontece
+
+427
+00:20:20,480 --> 00:20:27,270
+vou colocar aqui agora é lá 0101 2016
+
+428
+00:20:27,270 --> 00:20:33,270
+às 12 30 validar ele pegou lá 10 101
+
+429
+00:20:33,270 --> 00:20:36,750
+2016 é zero zero e 30 ele entendeu como
+
+430
+00:20:36,750 --> 00:20:40,260
+meia noite porque 00 que seria pra ele
+
+431
+00:20:40,260 --> 00:20:41,700
+meia-noite às 12 horas
+
+432
+00:20:41,700 --> 00:20:45,120
+é ele pega traços também 00 30 00 também
+
+433
+00:20:45,120 --> 00:20:47,970
+ele 100 coloquei depois lado segundo ele
+
+434
+00:20:47,970 --> 00:20:50,700
+fez uma conversão aqui ele gerou os
+
+435
+00:20:50,700 --> 00:20:53,010
+segundos reais
+
+436
+00:20:53,010 --> 00:20:57,990
+tá beleza e se eu quisesse saber por
+
+437
+00:20:57,990 --> 00:21:00,960
+exemplo se eu quiser saber por exemplo
+
+438
+00:21:00,960 --> 00:21:05,010
+se a data que eu digitei é inferior à da
+
+439
+00:21:05,010 --> 00:21:09,059
+atual por exemplo saber se a banda já
+
+440
+00:21:09,059 --> 00:21:11,190
+passou ou se ainda vai passar como eu
+
+441
+00:21:11,190 --> 00:21:13,230
+faço para saber isso vou criar aqui um
+
+442
+00:21:13,230 --> 00:21:18,330
+data hoje recebe mil data não passa nada
+
+443
+00:21:18,330 --> 00:21:20,279
+que ele vai pegar a data atual
+
+444
+00:21:20,279 --> 00:21:23,159
+eu faço o seguinte cálculo
+
+445
+00:21:23,159 --> 00:21:33,690
+efe hoje conto o stent ponto o time se
+
+446
+00:21:33,690 --> 00:21:38,429
+hoje for maior do que o de tom do ghat
+
+447
+00:21:38,429 --> 00:21:40,570
+times tente ponto
+
+448
+00:21:40,570 --> 00:21:46,659
+jett time fazer um dia tão quente eo
+
+449
+00:21:46,659 --> 00:21:48,909
+champagne
+
+450
+00:21:48,909 --> 00:21:55,179
+o show começa de da alog data informada
+
+451
+00:21:55,179 --> 00:21:57,429
+já passou
+
+452
+00:21:57,429 --> 00:22:04,419
+caso contrário é ou se ele vai falar que
+
+453
+00:22:04,419 --> 00:22:11,159
+a data ainda está por vir
+
+454
+00:22:11,309 --> 00:22:14,139
+ok vamos lá pra ver então eu vou
+
+455
+00:22:14,139 --> 00:22:19,029
+informar que uma data é 10 dos 5 em 2016
+
+456
+00:22:19,029 --> 00:22:24,399
+sei lá é 0800 validar a data informada
+
+457
+00:22:24,399 --> 00:22:27,519
+já passou porque a data atual 11 25 em
+
+458
+00:22:27,519 --> 00:22:33,009
+2016 se coloca aqui então para 2025 data
+
+459
+00:22:33,009 --> 00:22:35,379
+informada ainda está por vir
+
+460
+00:22:35,379 --> 00:22:36,519
+o que eu estou fazendo aqui quando eu
+
+461
+00:22:36,519 --> 00:22:38,919
+chamo de ética um método ghetti time
+
+462
+00:22:38,919 --> 00:22:41,230
+ele retorna aquele inteiro lado
+
+463
+00:22:41,230 --> 00:22:43,210
+timestamp então tá fazendo uma
+
+464
+00:22:43,210 --> 00:22:45,279
+comparação de inteiro com o inter se um
+
+465
+00:22:45,279 --> 00:22:46,750
+for maior do que o outro
+
+466
+00:22:46,750 --> 00:22:49,029
+tá tudo certo e esse inteiro ver de onde
+
+467
+00:22:49,029 --> 00:22:51,519
+ele saiu e se inteiro ele saiu de uma
+
+468
+00:22:51,519 --> 00:22:53,590
+data-base ok
+
+469
+00:22:53,590 --> 00:22:55,980
+se eu não me engano é 1º de janeiro de
+
+470
+00:22:55,980 --> 00:22:58,659
+1970 não lembro muito bem
+
+471
+00:22:58,659 --> 00:23:01,179
+tá mas é uma coisa assim então o que ele
+
+472
+00:23:01,179 --> 00:23:03,970
+faz é contar os segundos que se passaram
+
+473
+00:23:03,970 --> 00:23:06,159
+dessa data base até hoje
+
+474
+00:23:06,159 --> 00:23:08,500
+então é um número muito grande falou a
+
+475
+00:23:08,500 --> 00:23:09,940
+verdade pra vocês
+
+476
+00:23:09,940 --> 00:23:12,309
+e esse número é a gente consegue
+
+477
+00:23:12,309 --> 00:23:14,049
+trabalhar melhor com dados usando esse
+
+478
+00:23:14,049 --> 00:23:18,070
+número toque é beleza então trabalhamos
+
+479
+00:23:18,070 --> 00:23:20,409
+com a data vamos agora para a última
+
+480
+00:23:20,409 --> 00:23:23,620
+etapa do nosso código aqui de olho que é
+
+481
+00:23:23,620 --> 00:23:25,990
+usar máscara em tempo real a gente
+
+482
+00:23:25,990 --> 00:23:27,820
+trocar máscara em tempo real
+
+483
+00:23:27,820 --> 00:23:33,940
+vou expandir esse comentário pra cá e
+
+484
+00:23:33,940 --> 00:23:37,029
+vamos trabalhar então com a máscara que
+
+485
+00:23:37,029 --> 00:23:39,429
+a gente tem que fazer é o seguinte vamos
+
+486
+00:23:39,429 --> 00:23:42,759
+usar um método um evento no como box a
+
+487
+00:23:42,759 --> 00:23:43,929
+gente vem aqui nos eventos que é o
+
+488
+00:23:43,929 --> 00:23:46,509
+action perform que esse evento faz o
+
+489
+00:23:46,509 --> 00:23:48,809
+seguinte
+
+490
+00:23:52,420 --> 00:23:57,460
+cb underline tipo documento ponto ghetti
+
+491
+00:23:57,460 --> 00:24:00,800
+selected index for maior do que o maior
+
+492
+00:24:00,800 --> 00:24:03,590
+ou igual a 1 com 6 maior que zero né
+
+493
+00:24:03,590 --> 00:24:05,600
+significa que se a pessoa não clicarem
+
+494
+00:24:05,600 --> 00:24:08,240
+selecione que é o que a gente não quer
+
+495
+00:24:08,240 --> 00:24:09,410
+que ela faça né
+
+496
+00:24:09,410 --> 00:24:11,780
+ela é uma das duas opções a gente vai
+
+497
+00:24:11,780 --> 00:24:18,580
+tratar a máscara então agora quase if cb
+
+498
+00:24:18,580 --> 00:24:22,250
+tipo de documento é melhor isso aqui né
+
+499
+00:24:22,250 --> 00:24:24,080
+vamos fazer o seguinte vamos fazer e
+
+500
+00:24:24,080 --> 00:24:30,760
+final fazer um suíte aqui eu fazer o imt
+
+501
+00:24:30,760 --> 00:24:36,320
+tipo doc recebe cb underline documento
+
+502
+00:24:36,320 --> 00:24:44,930
+ponto ghetti selected index suíte tipo
+
+503
+00:24:44,930 --> 00:24:45,620
+doc
+
+504
+00:24:45,620 --> 00:24:52,580
+a gente faz case zero fazer um dia o
+
+505
+00:24:52,580 --> 00:24:56,600
+champanhe aqui ponto show começa a
+
+506
+00:24:56,600 --> 00:25:04,210
+ajudar log selecione um tipo vídeo
+
+507
+00:25:04,210 --> 00:25:12,760
+documento e um break
+
+508
+00:25:12,940 --> 00:25:25,190
+case um break up aqui não vou nem fazer
+
+509
+00:25:25,190 --> 00:25:27,620
+de fogo porque the fuck nesse caso é
+
+510
+00:25:27,620 --> 00:25:29,360
+desnecessário com o boca não tem uma
+
+511
+00:25:29,360 --> 00:25:31,460
+pessoa selecionada 0 diferente dizer um
+
+512
+00:25:31,460 --> 00:25:32,750
+ou dois né
+
+513
+00:25:32,750 --> 00:25:35,360
+então a gente vai fazer aqui se a pessoa
+
+514
+00:25:35,360 --> 00:25:38,560
+clica em um o que eu tenho que fazer é
+
+515
+00:25:38,560 --> 00:25:42,200
+ser underline documento
+
+516
+00:25:42,200 --> 00:25:48,950
+ponto 7 for matters hector e eu tenho
+
+517
+00:25:48,950 --> 00:25:52,070
+que informar uma fábrica de formato pra
+
+518
+00:25:52,070 --> 00:25:54,800
+ele que fabrica de formato é essa essa
+
+519
+00:25:54,800 --> 00:25:57,080
+fábrica se a pessoa selecionar um fpf
+
+520
+00:25:57,080 --> 00:26:02,090
+então é cpf ponto ganho de informática
+
+521
+00:26:02,090 --> 00:26:05,290
+se a pessoa selecionar dois vão fazer c
+
+522
+00:26:05,290 --> 00:26:09,530
+npj guerra informática na classe dentro
+
+523
+00:26:09,530 --> 00:26:11,480
+da classe pf a classe pj
+
+524
+00:26:11,480 --> 00:26:14,570
+eu tenho um método chamado jet
+
+525
+00:26:14,570 --> 00:26:17,510
+informática método ele retorna um
+
+526
+00:26:17,510 --> 00:26:21,230
+default for matters hector ii passando 1
+
+527
+00:26:21,230 --> 00:26:23,870
+mil mesc fôrma ter que se comece a
+
+528
+00:26:23,870 --> 00:26:26,270
+formatar e ele recebe um formato que é
+
+529
+00:26:26,270 --> 00:26:27,110
+isso
+
+530
+00:26:27,110 --> 00:26:29,090
+no topo da classe não tem uma estranha e
+
+531
+00:26:29,090 --> 00:26:33,170
+formato exatamente ele retorna à é a
+
+532
+00:26:33,170 --> 00:26:36,920
+máscara do tipo do campo né seu cpf essa
+
+533
+00:26:36,920 --> 00:26:38,960
+máscara que isso foi na classe npj eu
+
+534
+00:26:38,960 --> 00:26:40,520
+tenho um formato que bate com o
+
+535
+00:26:40,520 --> 00:26:41,840
+informado o cnpj
+
+536
+00:26:41,840 --> 00:26:44,480
+vamos fazer o teste não para ver se está
+
+537
+00:26:44,480 --> 00:26:47,750
+certo ou clicar aqui e cpf ele o pac
+
+538
+00:26:47,750 --> 00:26:49,430
+chegam a máscara aqui ó
+
+539
+00:26:49,430 --> 00:26:56,300
+se clicar em cnpj além de selecionar o
+
+540
+00:26:56,300 --> 00:26:58,030
+tipo de documento
+
+541
+00:26:58,030 --> 00:27:01,340
+cnpj já não foi muito bem porque deixa
+
+542
+00:27:01,340 --> 00:27:04,720
+eu ver lá assim pessoal esquecendo de um
+
+543
+00:27:04,720 --> 00:27:07,220
+pequeno detalhe que o que acontece
+
+544
+00:27:07,220 --> 00:27:10,700
+quando eu tô citando um formato é bom
+
+545
+00:27:10,700 --> 00:27:12,920
+entender que o documento não sendo ela
+
+546
+00:27:12,920 --> 00:27:15,770
+documento o objeto ele tem um valor
+
+547
+00:27:15,770 --> 00:27:17,360
+então quando eu simplesmente alterar o
+
+548
+00:27:17,360 --> 00:27:19,490
+formato dele ele tende a querer
+
+549
+00:27:19,490 --> 00:27:22,100
+reformata aquele valor que eu tenho que
+
+550
+00:27:22,100 --> 00:27:24,650
+fazer e limpar esse valor então quando a
+
+551
+00:27:24,650 --> 00:27:25,639
+gente entra no mérito
+
+552
+00:27:25,639 --> 00:27:27,529
+aqui vão fazer uns e ander laine
+
+553
+00:27:27,529 --> 00:27:28,789
+documento
+
+554
+00:27:28,789 --> 00:27:33,079
+ponto 7 velo e acertar o valor eu vou
+
+555
+00:27:33,079 --> 00:27:35,209
+colocar nulo e vou limpar cada vez que
+
+556
+00:27:35,209 --> 00:27:37,639
+eu trocar ela tem que limpar o valor do
+
+557
+00:27:37,639 --> 00:27:42,349
+campo só para testar então cpf do zero
+
+558
+00:27:42,349 --> 00:27:46,969
+aqui a ele não vai fazer nada né e cnpj
+
+559
+00:27:46,969 --> 00:27:49,419
+e limpa também formada novamente por o
+
+560
+00:27:49,419 --> 00:27:52,639
+cnpj e aí eu tenho que fazer agora é lá
+
+561
+00:27:52,639 --> 00:27:59,379
+no método validar eu vou fazer o quê
+
+562
+00:28:00,529 --> 00:28:06,519
+cb tipo documento 1.10 elected index
+
+563
+00:28:06,519 --> 00:28:08,509
+igual a um quer dizer que a pessoa
+
+564
+00:28:08,509 --> 00:28:10,849
+selecionou cpf então vou fazer a
+
+565
+00:28:10,849 --> 00:28:13,369
+validação de um cpf e já tem a validação
+
+566
+00:28:13,369 --> 00:28:15,169
+de um cpf prontinho aqui ó
+
+567
+00:28:15,169 --> 00:28:19,729
+só confiar só que ao contrário dele
+
+568
+00:28:19,729 --> 00:28:26,059
+pegar o cpf phc underline documento que
+
+569
+00:28:26,059 --> 00:28:29,479
+já é é a que o documento não o posso
+
+570
+00:28:29,479 --> 00:28:33,440
+fazer aqui então stream documento recebe
+
+571
+00:28:33,440 --> 00:28:36,909
+sea underline documento ponto ghetti
+
+572
+00:28:36,909 --> 00:28:46,129
+text aí eu faço documento pessoal
+
+573
+00:28:46,129 --> 00:28:48,529
+selecionado pelo cnpj eu já peguei aqui
+
+574
+00:28:48,529 --> 00:28:49,879
+também o cnpj
+
+575
+00:28:49,879 --> 00:28:54,559
+a atualização está pronto e aqui é o
+
+576
+00:28:54,559 --> 00:28:56,389
+mesmo caso ao invés sempre pergunto eu
+
+577
+00:28:56,389 --> 00:28:59,629
+pego um documento muito simples né
+
+578
+00:28:59,629 --> 00:29:02,659
+e aí aqui não vai ser mais cnpcp fnpj
+
+579
+00:29:02,659 --> 00:29:07,190
+messi que não vai ser o documento é
+
+580
+00:29:07,190 --> 00:29:12,879
+documento mas que chamam aqui é doc masc
+
+581
+00:29:12,879 --> 00:29:16,539
+doc mesc
+
+582
+00:29:17,280 --> 00:29:23,250
+e doc no méxico
+
+583
+00:29:23,950 --> 00:29:27,340
+vamos lá então pra ver se isso funciona
+
+584
+00:29:27,340 --> 00:29:30,340
+vamos lá eu quero um cpf eu vou colocar
+
+585
+00:29:30,340 --> 00:29:35,980
+o cpf que foi gerado lá pra mim 7 395 7
+
+586
+00:29:35,980 --> 00:29:41,470
+4 616 34 validar validou perfeitamente
+
+587
+00:29:41,470 --> 00:29:43,780
+né e agora é só trocar ali para 5 por
+
+588
+00:29:43,780 --> 00:29:47,140
+exemplo mandou blindar cpf inválido ao
+
+589
+00:29:47,140 --> 00:29:50,320
+documento e cnpj então vamos lá o cnpj
+
+590
+00:29:50,320 --> 00:29:54,640
+gostei da pergunta válido 14 7 7 728
+
+591
+00:29:54,640 --> 00:29:59,520
+9000 164 validar válido e perfeitamente
+
+592
+00:29:59,520 --> 00:30:03,670
+cnpj e agora eu tô aqui pra 51 exemplo
+
+593
+00:30:03,670 --> 00:30:06,070
+mandar validá-la cnpj inválido
+
+594
+00:30:06,070 --> 00:30:09,130
+ok então nós conseguimos está vendo que
+
+595
+00:30:09,130 --> 00:30:11,200
+serve é da seleção do tipo de documento
+
+596
+00:30:11,200 --> 00:30:14,980
+então ele limpa e claro é óbvio aí mas
+
+597
+00:30:14,980 --> 00:30:16,480
+tá tudo certo consegui trocar máscara em
+
+598
+00:30:16,480 --> 00:30:18,340
+tempo de execução entender o porquê
+
+599
+00:30:18,340 --> 00:30:20,500
+essas classes facilitou muito o
+
+600
+00:30:20,500 --> 00:30:22,750
+desenvolvimento porque só estando pronta
+
+601
+00:30:22,750 --> 00:30:24,070
+você não precisa ficar planejando e
+
+602
+00:30:24,070 --> 00:30:26,140
+validar santo mas o objeto que já todos
+
+603
+00:30:26,140 --> 00:30:27,340
+metros necessários né
+
+604
+00:30:27,340 --> 00:30:28,470
+bom espero que vocês tenham gostado
+
+605
+00:30:28,470 --> 00:30:31,780
+desse tema gostado da parte de validação
+
+606
+00:30:31,780 --> 00:30:32,290
+né
+
+607
+00:30:32,290 --> 00:30:33,580
+espero que isso tenha sido útil pra
+
+608
+00:30:33,580 --> 00:30:35,950
+vocês se vocês conhecem alguns amigos
+
+609
+00:30:35,950 --> 00:30:37,930
+colegas de faculdade que podem se
+
+610
+00:30:37,930 --> 00:30:39,760
+interessar por esse assunto compartilhe
+
+611
+00:30:39,760 --> 00:30:41,590
+em suas redes sociais se você ainda não
+
+612
+00:30:41,590 --> 00:30:43,390
+inscrito o nosso canal se inscrever
+
+613
+00:30:43,390 --> 00:30:45,100
+clicando no botão aqui abaixo
+
+614
+00:30:45,100 --> 00:30:47,260
+muito obrigado a todos até a próxima e
+
+615
+00:30:47,260 --> 00:30:49,890
+calma
